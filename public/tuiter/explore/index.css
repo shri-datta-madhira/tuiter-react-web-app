@@ -11,12 +11,14 @@
     box-sizing: border-box;
 }
 
+.wd-search-bar-div {
+    width: 100%;
+}
 .wd-search-div {
     margin-left: 25px;
     margin-top: 12px;
 }
 .wd-search-form {
-    width: 85%;
     height: 50px;
     padding-top: 6px;
 }
@@ -37,8 +39,8 @@
     color: deepskyblue;
     padding: 14px 0 6px 30px;
     margin-right: 12px;
-    transform: scale(1.75, 1.75);
     text-decoration: none;
+    font-size: 30px;
 }
 
 .wd-links-div {

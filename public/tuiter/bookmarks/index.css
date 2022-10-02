@@ -1,0 +1,79 @@
+@import "../styles.css";
+
+.wd-bkms-body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.wd-main-div {
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.wd-top-div {
+    margin: 12px 0 12px 16px;
+}
+
+.wd-bkms-span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.wd-tag-span {
+    font-size: 13px;
+}
+
+/* USR IMG DIV*/
+.wd-img-tag {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+.wd-img-div {
+    margin: 12px 0 0 16px;
+}
+
+/* POST DIV*/
+.wd-post-div {
+    margin: 12px 0 0 12px;
+}
+.wd-name-span {
+    font-weight: bold;
+}
+.wd-para-div {
+    margin-right: 16px;
+    max-width: 506px;
+}
+
+/*LINK DIV*/
+.wd-link-div {
+    margin-top: 12px;
+    margin-right: 16px;
+    border-radius: 5%;
+    max-width: 504px;
+    border-style: solid;
+}
+.wd-link-img-div {
+    max-height: 264px;
+}
+.wd-link-image {
+    width: 504px;
+    height: 264px;
+}
+.wd-link-href {
+    text-decoration: none;
+}
+.wd-link-href-padding {
+    padding: 12px 12px 12px 12px;
+}
+
+/*Comment Retuit Like Share*/
+.wd-crls {
+    justify-content: space-around;
+    width: 100%;
+}
+.wd-like {
+    color: red;
+}
+
+
+

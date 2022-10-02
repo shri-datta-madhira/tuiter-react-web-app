@@ -1,0 +1,74 @@
+/*Background color is black. Borders are rgb(47, 51, 54)*/
+/*All classes must be prefixed with "wd-".  All content below is offset 16px from the left border.*/
+@import "../styles.css";
+
+.wd-expl-body {
+    margin: 0;
+    min-height: 100%;
+}
+.wd-main-div {
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.wd-search-div {
+    margin-left: 25px;
+    margin-top: 12px;
+}
+.wd-search-form {
+    width: 85%;
+    height: 50px;
+    padding-top: 6px;
+}
+.wd-search-input {
+    width: 100%;
+    margin: 0;
+    border-radius: 50px;
+    font: 15px system-ui;
+    padding: 6px 0 6px 40px;
+    background: gray url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 6px center;
+}
+.wd-search-input:focus {
+    outline: none;
+}
+
+.wd-settings-icon {
+    background-color: transparent;
+    color: deepskyblue;
+    padding: 14px 0 6px 30px;
+    margin-right: 12px;
+    transform: scale(1.75, 1.75);
+    text-decoration: none;
+}
+
+.wd-links-div {
+    justify-content: space-around;
+}
+.wd-for-you {
+    text-decoration: none;
+    color: rgb(29,161,242);
+}
+.wd-border-for-you {
+    border-width: 1px;
+    border-color: rgb(29,161,242);
+}
+.wd-remaining {
+    text-decoration: none;
+}
+
+
+.wd-author-img {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.wd-suggested-post-div {
+    width: 80%;
+}
+.wd-suggested-post-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    float:right;
+}
+

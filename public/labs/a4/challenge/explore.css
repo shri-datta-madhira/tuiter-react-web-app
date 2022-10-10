@@ -1,0 +1,116 @@
+
+@import "../../../tuiter/styles.css";
+
+.wd-body {
+    margin: 0;
+    min-height: 100%;
+    background-color: black;
+}
+
+.border-start.border-bottom {
+    border-color: #000;
+}
+
+.wd-full-div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.wd-middle-div {
+    border-color: gray;
+}
+
+.wd-nav-list.nav-link {
+    border: none;
+    background-color: black;
+    color: #d7d5d5;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color;
+}
+.wd-nav-list.nav-link:hover {
+    color: #d7d5d5;
+    font-weight: bold;
+}
+.wd-nav-list.nav-link:visited {
+    color: #d7d5d5;
+    font-weight: bold;
+}
+
+.btn-primary.wd-tuit-btn-1 {
+    border-radius: 50px;
+    width: 90%;
+    text-align: center;
+    background-color: deepskyblue;
+}
+.btn-primary.wd-tuit-btn-1:hover {
+    background-color: #0198cc;
+    color: #cecbcb;
+}
+
+.wd-search-input {
+    width: 100%;
+    margin: 0;
+    border: none;
+    font-size: large;
+    padding: 6px 0 6px 40px;
+    background: #353538 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 6px center;
+}
+.wd-search-input:focus {
+    outline: deepskyblue;
+}
+.wd-search-input::placeholder {
+    color: lightgray;
+}
+.wd-settings-icon {
+    background-color: transparent;
+    color: rgb(204, 204, 204);
+    margin-right: 12px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.wd-big-img-txt-2 {
+    font-size: x-large;
+}
+.wd-card {
+    background-image: linear-gradient(to top, black 30%, #676767);
+}
+
+.wd-sugg_post_profile_img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.wd-suggested-post-img {
+    width: 70%;
+    height: auto;
+    border-radius: 35%;
+}
+
+.wd-nav-list-1.list-group-item {
+    border: none;
+    background-color: #1f1f1f;
+    color: #a9a9a9;
+}
+.wd-nav-list-1.list-group-item-action:hover {
+    background-color: rgba(168, 166, 166, 0.25);
+}
+
+.wd-profile-img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.btn-primary.wd-follow-btn {
+    border: none;
+    border-radius: 50px;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: .90rem;
+}
+.btn-primary.wd-follow-btn:hover {
+    background-color: #e5e5e5;
+    color: black;
+}

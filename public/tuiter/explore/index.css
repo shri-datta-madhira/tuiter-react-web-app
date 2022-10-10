@@ -1,11 +1,11 @@
-/*Background color is black. Borders are rgb(47, 51, 54)*/
-/*All classes must be prefixed with "wd-".  All content below is offset 16px from the left border.*/
+
 @import "../styles.css";
 
 .wd-expl-body {
     margin: 0;
     min-height: 100%;
 }
+
 .wd-main-div {
     flex-direction: row;
     box-sizing: border-box;
@@ -16,7 +16,7 @@
 }
 .wd-search-div {
     margin-left: 25px;
-    margin-top: 12px;
+    /*margin-top: 12px;*/
 }
 .wd-search-form {
     height: 50px;
@@ -25,22 +25,23 @@
 .wd-search-input {
     width: 100%;
     margin: 0;
-    border-radius: 50px;
     font: 15px system-ui;
     padding: 6px 0 6px 40px;
-    background: gray url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 6px center;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 6px center;
 }
 .wd-search-input:focus {
     outline: none;
 }
+.wd-search-input::placeholder {
+    color: gray;
+}
 
 .wd-settings-icon {
     background-color: transparent;
-    color: deepskyblue;
-    padding: 14px 0 6px 30px;
+    color: rgb(29, 100, 242);
     margin-right: 12px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .wd-links-div {
@@ -58,6 +59,14 @@
     text-decoration: none;
 }
 
+.wd-for-you-img-1 {
+    background-image: url("../../images/explore-for-you-1.jpg");
+}
+.wd-overlay {
+    top: 80px;
+    right: 15px;
+    font-size: 20px;
+}
 
 .wd-author-img {
     border-radius: 50%;
@@ -68,8 +77,19 @@
     width: 80%;
 }
 .wd-suggested-post-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 15%;
+    width: 75%;
+    height: auto;
+    border-radius: 35%;
+}
+
+.wd-profile-img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.btn-primary.wd-tweet-btn {
+    border-radius: 50px;
+    width: 90%;
+    text-align: center;
 }
 

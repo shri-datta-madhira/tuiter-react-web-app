@@ -4,139 +4,241 @@
     <meta charset="UTF-8">
     <title>Explore</title>
     <link href="index.css" rel="stylesheet"/>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fontawesome link-->
+    <script src="https://kit.fontawesome.com/26353da31b.js" crossorigin="anonymous"></script>
 </head>
-<body class="wd-expl-body wd-background-color wd-font">
+<body class="wd-expl-body">
 
-    <div class="wd-main-div wd-flex">
-        <div class="wd-border-width-8px"></div>
+    <div class="col-12 wd-flex">
+        <!-- Navigation Links -->
+        <div class="mt-2 ms-5 d-block col-1 col-md-1 col-lg-1 col-xl-2">
+            <!-- List -->
+            <div class="list-group col-11">
+                <!--Twitter icon-->
+                <i class="list-group-item fa-brands fa-twitter"></i>
+                <!--Home-->
+                <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-house-chimney"></i> <span class="d-none d-xl-inline">Home</span>
+                </a>
+                <!--Explore-->
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa-solid fa-hashtag"></i> <span class="d-none d-xl-inline">Explore</span>
+                </a>
+                <!--Notifications-->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bell"></i> <span class="d-none d-xl-inline">Notifications</span>
+                </a>
+                <!--Messages-->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-envelope"></i> <span class="d-none d-xl-inline">Messages</span>
+                </a>
+                <!--Bookmarks-->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bookmark"></i> <span class="d-none d-xl-inline">Bookmarks</span>
+                </a>
+                <!--Lists-->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-list"></i> <span class="d-none d-xl-inline">Lists</span>
+                </a>
+                <!--Profile-->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user"></i> <span class="d-none d-xl-inline">Profile</span>
+                </a>
+                <!--More-->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span class="d-none d-xl-inline">More</span>
+                </a>
+            </div>
+            <!-- Tweet Button-->
+            <button class="btn btn-primary wd-btn mt-1"> Tuit </button>
+        </div>
 
-        <div class="wd-middle-div wd-full-width wd-border wd-border-right-style wd-border-left-style">
-            <!--Search Bar-->
-            <div class="wd-search-div wd-flex">
-                <div class="wd-search-bar-div">
-                    <form class="wd-search-form">
-                        <label>
-                            <input class="wd-search-input wd-font-white wd-no-border" type="search" placeholder="Search Tuiter"/>
-                        </label>
+        <!-- Main Content -->
+        <div class="mt-2 ms-2 me-2 col-8 col-md-8 col-lg-6 col-xl">
+            <!--Search Bar & Settings icon-->
+            <div class="col-12 wd-flex">
+                <!-- Search Bar -->
+                <div class="col-11">
+                    <form>
+                        <input class="border rounded-pill wd-search-input" type="search" placeholder="Search Tuiter"/>
                     </form>
                 </div>
-                <div class="wd-float-right">
-                    <a href="explore-settings.html" class="wd-settings-icon">&#x2699;</a>
+                <!-- Settings icon -->
+                <div class="col-1">
+                    <a href="explore-settings.html" class="wd-settings-icon"><i class="fa-solid fa-gear ps-3 pe-0"></i></a>
                 </div>
             </div>
             <!--For You, Trending, COVID-19, ...-->
-            <div class="wd-links-div wd-font-15px wd-flex wd-border wd-border-bottom-style">
-                <div class="wd-border-for-you wd-border-bottom-style wd-padding-all-16px">
-                    <a href="#" class="wd-for-you wd-font-bold">For You</a>
-                </div>
-                <a href="#" class="wd-padding-all-16px wd-remaining wd-font-110-118-125">Trending</a>
-                <a href="#" class="wd-padding-all-16px wd-remaining wd-font-110-118-125">COVID-19</a>
-                <a href="#" class="wd-padding-all-16px wd-remaining wd-font-110-118-125">News</a>
-                <a href="#" class="wd-padding-all-16px wd-remaining wd-font-110-118-125">Sports</a>
-                <a href="#" class="wd-padding-all-16px wd-remaining wd-font-110-118-125">Entertainment</a>
+            <div class="nav nav-tabs">
+                <div class="nav-item"> <a href="for-you.html" class="nav-link active">For You</a> </div>
+                <div class="nav-item"> <a href="trending.html" class="nav-link">Trending</a> </div>
+                <div class="nav-item"> <a href="news.html" class="nav-link">News</a> </div>
+                <div class="nav-item"> <a href="sports.html" class="nav-link">Sports</a> </div>
+                <div class="nav-item"> <a href="entertainment.html" class="nav-link d-none d-md-grid">Entertainment</a> </div>
             </div>
-            <!--First 2 trending topics-->
-            <div class="wd-full-width wd-border wd-border-bottom-style wd-margin-top-12px">
-                <!--Trending in Science-->
-                <div class="wd-margin-left-16px wd-margin-right-16px wd-padding-bottom-12px">
-                    <div>
-                        <span class="wd-font-110-118-125 wd-font-13px">Trending in Science</span>
-                        <span class="wd-3-dots">&#8230;</span>
-                    </div>
-                    <span class="wd-font-white wd-font-bold"> Starship </span><br/>
-                    <span class="wd-font-110-118-125 wd-font-13px"> 55.5K Tweets </span>
-                </div>
-                <!--Sports.Trending-->
-                <div class="wd-margin-left-16px wd-margin-right-16px wd-padding-bottom-12px">
-                    <div>
-                        <span class="wd-font-110-118-125 wd-font-13px">Podcasting &#x2022; Trending</span>
-                        <span class="wd-3-dots">&#8230;</span>
-                    </div>
-                    <span class="wd-font-white wd-font-bold"> Joe Rogan </span><br/>
-                    <span class="wd-font-110-118-125 wd-font-13px"> 5,218 Tweets </span>
+            <!--First big picture-->
+            <div class="card mt-2 border-0">
+                <img class="card-img-top rounded-0" src="../../images/explore-for-you-1.jpg" alt="Unable to render image :(">
+                <div class="card-img-overlay card-inverse h-100 d-flex flex-column justify-content-end">
+                    <h1 class="text-stroke text-white fw-bold">
+                        Twitter-Musk saga continues
+                    </h1>
                 </div>
             </div>
-            <!--The New York Times-->
-            <div class="wd-margin-top-12px wd-flex wd-border wd-border-bottom-style">
-                <!-- left side -->
-                <div class="wd-suggested-post-div wd-margin-left-16px">
-                    <div>
-                        <img src="new_york_times.jpeg" alt="Unable to render image :(" class="wd-author-img"/>
-                        <span class="wd-font-bold wd-font-white wd-font-12px"> The New York Times &#x2611; </span>
-                        <span class="wd-font-gray wd-font-12px"> &#x2022; Yesterday </span>
+            <!-- Suggested posts -->
+            <div class="border rounded">
+                <!-- First suggested post -->
+                <div class="border wd-flex">
+                    <!-- content -->
+                    <div class="col-9 pt-1 ps-2 pb-1">
+                        <!-- Topic -->
+                        <div class="wd-font-gray wd-font-12px"> Web Development </div>
+                        <!-- User name tag and time -->
+                        <div class="wd-font-14px">
+                            <span class="fw-bold"> ReactJS </span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="wd-font-gray"> - 2h </span>
+                        </div>
+                        <!-- Paragraph -->
+                        <div class="fw-bold wd-font-14px"> React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs </div>
                     </div>
-                    <div>
-                        <span class="wd-font-white wd-font-bold">CNN's Cuomo Conundrum: A star anchor with a brother in trouble</span>
-                    </div>
-                </div>
-                <!-- right side -->
-                <div class="wd-margin-right-16px wd-padding-bottom-12px wd-full-width">
-                    <img src="cuomo.jpeg" alt="Unable to render image :(" class="wd-suggested-post-img wd-float-right"/>
-                </div>
-            </div>
-            <!--COVID-19 latest-->
-            <div class="wd-margin-top-12px wd-flex wd-border wd-border-bottom-style">
-                <!-- left side -->
-                <div class="wd-suggested-post-div wd-margin-left-16px">
-                    <span class="wd-font-gray wd-font-12px"> COVID-19 &#x2022; LIVE </span><br/>
-                    <span class="wd-font-white wd-font-bold"> COVID-19: News and updates for Massachusetts </span>
-                </div>
-                <!-- right side -->
-                <div class="wd-margin-right-16px wd-padding-bottom-12px wd-full-width">
-                    <img src="covid_live.png" alt="Unable to render image :(" class="wd-suggested-post-img wd-float-right"/>
-                </div>
-            </div>
-            <!--COVID-19 latest 2-->
-            <div class="wd-margin-top-12px wd-flex wd-border wd-border-bottom-style">
-                <!-- left side -->
-                <div class="wd-suggested-post-div wd-margin-left-16px">
-                    <span class="wd-font-gray wd-font-12px"> COVID-19 &#x2022; LIVE </span><br/>
-                    <span class="wd-font-white wd-font-bold"> COVID-19: News and updates for United States </span>
-                </div>
-                <!-- right side -->
-                <div class="wd-margin-right-16px wd-padding-bottom-12px wd-full-width">
-                    <img src="us.jpg" alt="Unable to render image :(" class="wd-suggested-post-img wd-float-right"/>
-                </div>
-            </div>
-            <!--Bloomberg Opinion-->
-            <div class="wd-margin-top-12px wd-flex wd-border wd-border-bottom-style">
-                <!-- left side -->
-                <div class="wd-suggested-post-div wd-margin-left-16px">
-                    <div>
-                        <img src="bloomberg_logo.png" alt="Unable to render image :(" class="wd-author-img"/>
-                        <span class="wd-font-bold wd-font-white wd-font-12px"> Bloomberg Opinion &#x2611; </span>
-                        <span class="wd-font-gray wd-font-12px"> &#x2022; Yesterday </span>
-                    </div>
-                    <div>
-                        <span class="wd-font-white wd-font-bold">
-                            Thinking about getting a booster? Read this first.
-                        </span>
+                    <!-- picture -->
+                    <div class="col-3 pt-1">
+                        <img src="../../images/react_sugg_post_img.png" alt="Unable to render image :(" class="border-0 rounded-4 img-thumbnail wd-suggested-post-img float-end pe-2"/>
                     </div>
                 </div>
-                <!-- right side -->
-                <div class="wd-margin-right-16px wd-padding-bottom-12px wd-full-width">
-                    <img src="bloomberg.jpeg" alt="Unable to render image :(" class="wd-suggested-post-img wd-float-right"/>
-                </div>
-            </div>
-            <!--Trending in US-->
-            <div class="wd-full-width wd-border wd-border-bottom-style wd-margin-top-12px wd-padding-bottom-12px">
-                <!--Trending in Science-->
-                <div class="wd-margin-left-16px wd-margin-right-16px">
-                    <div>
-                        <span class="wd-font-110-118-125 wd-font-13px">Trending in United States</span>
-                        <span class="wd-3-dots">&#8230;</span>
+                <!-- Second suggested post -->
+                <div class="border wd-flex">
+                    <!-- content -->
+                    <div class="col-9 pt-1 ps-2 pb-1">
+                        <!-- Topic -->
+                        <div class="fw-bold wd-font-14px">
+                            JavaScript <i class="fa-solid fa-circle-check"></i>
+                            <span class="wd-font-gray"> - 2h </span>
+                        </div>
+                        <div class="fw-bold wd-font-14px"> React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs </div>
+                        <div class="wd-font-gray wd-font-14px"> 123K Tweets </div>
                     </div>
-                    <span class="wd-font-white wd-font-bold"> Wonder Bread </span><br/>
-                    <span class="wd-font-110-118-125 wd-font-13px"> 1,259 Tweets </span>
+                    <!-- picture -->
+                    <div class="col-3 pt-1">
+                        <img src="../../images/js_sugg_post_img.png" alt="Unable to render image :(" class="border-0 rounded-4 img-thumbnail wd-suggested-post-img float-end pe-2"/>
+                    </div>
                 </div>
-            </div>
-
-            <div class="wd-margin-top-12px">
-
+                <!-- Third suggested post -->
+                <div class="border wd-flex">
+                    <!-- content -->
+                    <div class="col-9 pt-1 ps-2 pb-1">
+                        <div class="wd-font-gray wd-font-14px"> Web Development </div>
+                        <div class="fw-bold wd-font-14px"> jQuery </div>
+                        <div class="wd-font-gray wd-font-14px"> 123K Tweets </div>
+                    </div>
+                    <!-- picture -->
+                    <div class="col-3 pt-1">
+                        <img src="../../images/jquery_sugg_post_img.png" alt="Unable to render image :(" class="border-0 rounded-4 img-thumbnail wd-suggested-post-img float-end pe-2"/>
+                    </div>
+                </div>
+                <!-- Fourth suggested post -->
+                <div class="border wd-flex">
+                    <!-- content -->
+                    <div class="col-9 pt-1 ps-2 pb-1">
+                        <div class="wd-font-gray wd-font-14px"> Web Development </div>
+                        <div class="fw-bold wd-font-14px"> NodeJS <i class="fa-solid fa-circle-check"></i> - 2h  </div>
+                        <div class="wd-font-gray wd-font-14px"> 123K Tweets </div>
+                    </div>
+                    <!-- picture -->
+                    <div class="col-3 pt-1">
+                        <img src="../../images/node_sugg_post_img.jpg" alt="Unable to render image :(" class="border-0 rounded-4 img-thumbnail wd-suggested-post-img float-end pe-2"/>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="wd-border-width-8px"></div>
+        <!-- What to follow -->
+        <div class="mt-2 ms-2 me-4 d-none d-lg-flex col-lg-4">
+            <div class="list-group col-12 col-xl-11">
+                <!--Who to Follow-->
+                <span class="list-group-item wd-font-bold"> Who to follow </span>
+                <!--Tesla-->
+                <div class="list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../images/tesla_profile_image.jpg" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold"> Tesla <i class="fa-solid fa-circle-check"></i> </span> <br/> <span> @Tesla </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-tweet-btn mt-1 wd-full-width"> Follow </button>
+                    </div>
+                </div>
+                <!--NASA-->
+                <div class="list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../images/nasa_profile_image.jpg" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold"> NASA <i class="fa-solid fa-circle-check"></i> </span> <br/> <span> @NASA </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-tweet-btn mt-1 wd-full-width"> Follow </button>
+                    </div>
+                </div>
+                <!--SCUDERIA FERRARI-->
+                <div class="list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../images/scuderia_ferrari_profile_image.png" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold"> Scuderia Ferrari <i class="fa-solid fa-circle-check"></i> </span> <br/> <span> @ScuderiaFerrari </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-tweet-btn mt-1 wd-full-width"> Follow </button>
+                    </div>
+                </div>
+                <!--MICROSOFT-->
+                <div class="list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../images/microsoft_profile_image.jpg" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold"> Microsoft <i class="fa-solid fa-circle-check"></i> </span> <br/> <span> @Microsoft </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-tweet-btn mt-1 wd-full-width"> Follow </button>
+                    </div>
+                </div>
+                <!--SPOTIFY-->
+                <div class="list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../images/spotify_profile_image.jpg" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold"> Spotify <i class="fa-solid fa-circle-check"></i> </span> <br/> <span> @Spotify </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-tweet-btn mt-1 wd-full-width"> Follow </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

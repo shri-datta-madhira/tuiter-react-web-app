@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore - Challenge</title>
+    <link href="explore.css" rel="stylesheet"/>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fontawesome link-->
+    <script src="https://kit.fontawesome.com/26353da31b.js" crossorigin="anonymous"></script>
+</head>
+<body class="wd-body">
+
+    <div class="wd-full-div border-0 text-white wd-flex">
+        <!-- Navigation Links -->
+        <div class="mt-2 ms-4 d-block col-1 col-md-1 col-lg-1 col-xl-2">
+            <!-- List -->
+            <nav class="navbar">
+                <!-- Links -->
+                <ul class="navbar-nav w-100">
+                    <li class="wd-nav-list nav-item">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-t"></i>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-house-chimney"></i> <span class="d-none d-xl-inline ms-3">Home</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list fw-bold text-white" href="#">
+                            <i class="fa-solid fa-hashtag"></i> <span class="d-none d-xl-inline ms-3">Explore</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="wd-nav-list nav-link " href="#">
+                            <i class="fa-solid fa-bell"></i> <span class="d-none d-xl-inline ms-3">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-envelope"></i> <span class="d-none d-xl-inline ms-3">Messages</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-bookmark"></i> <span class="d-none d-xl-inline ms-3">Bookmarks</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-list"></i> <span class="d-none d-xl-inline ms-3">Lists</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-user"></i> <span class="d-none d-xl-inline ms-3">Profile</span>
+                        </a>
+                    </li>
+                    <li class="wd-nav-list nav-item mt-2">
+                        <a class="nav-link wd-nav-list" href="#">
+                            <i class="fa-solid fa-ellipsis"></i> <span class="d-none d-xl-inline ms-3">More</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Tweet Button-->
+            <button class="btn btn-primary btn-lg wd-tuit-btn-1 mt-2"> Tuit </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="wd-border wd-border-left-style wd-border-right-style ms-2 me-2 col-10 col-md-8 col-lg-6">
+            <!--Search Bar & Settings icon-->
+            <div class="col-12 wd-flex mt-2">
+                <!-- Search Bar -->
+                <div class="col-11 ps-3 pe-4">
+                    <form>
+                        <label class="w-100">
+                            <input class="rounded-pill wd-search-input" type="search" placeholder="Search Tuiter"/>
+                        </label>
+                    </form>
+                </div>
+                <!-- Settings icon -->
+                <div class="col-1">
+                    <a href="explore-settings.html" class="wd-settings-icon"><i class="fa-solid fa-gear ps-3 pt-2 pe-0"></i></a>
+                </div>
+            </div>
+            <!--For You, Trending, ...-->
+            <div class="col-12 wd-border wd-border-bottom-style">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3 bg-warning">
+                        <h3>Column A</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 bg-primary text-white">
+                        <h3>Column B</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 bg-danger text-white">
+                        <h3>Column C</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 bg-success text-white">
+                        <h3>Column D</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- First big picture -->
+            <div class="wd-card card border-0 rounded-0">
+                <img class="card-img-top border-bottom opacity-50 rounded-0" src="../../../images/explore-entertainment-1.png" alt="Unable to render image :(">
+                <div class="card-img-overlay card-inverse h-100 d-flex flex-column justify-content-end">
+                    <span class="small text-light"> Anime &middot; Last night </span>
+                    <h1 class="wd-big-img-txt-2 text-stroke text-white fw-bold"> Jujutsu Kaisen Season 2 release date announced </h1>
+                </div>
+            </div>
+            <!-- First Trending Topic -->
+            <div class="container px-3 pt-3 pb-1">
+                <div class="text-muted">
+                    <span class="text-sm-start small"> Trending in Bollywood </span> <i class="fa-solid fa-ellipsis float-end"></i>
+                </div>
+                <div>
+                    <span class="text-white fw-bold"> #BanAdipurush </span> <br/> <span class="text-muted small"> 168K Tuits </span>
+                </div>
+            </div>
+            <!-- Second Trending Topic -->
+            <div class="container px-3 pt-2 pb-3">
+                <div class="text-muted">
+                    <span class="text-sm-start small"> Trending in R&B & soul </span> <i class="fa-solid fa-ellipsis float-end"></i>
+                </div>
+                <div>
+                    <span class="text-white fw-bold"> Chloe </span> <br/>
+                    <span class="text-muted small"> Trending with <a href="#" class="text-decoration-none"> Halle </a> </span>
+                </div>
+            </div>
+            <!-- Third Trending Topic -->
+            <div class="container px-3 pt-2 pb-3 wd-flex">
+                <!-- News Info -->
+                <div class="col-9">
+                    <!--Profile image, name, time-->
+                    <div>
+                        <img src="../../../images/buzz_feed_profile_image.png" alt="Unable to render image :(" class="wd-sugg_post_profile_img rounded-circle"/>
+                        <span class="fw-bold text-light small"> BuzzFeed <i class="fa-solid fa-circle-check"></i> </span>
+                        <span class="small text-muted"> &middot; 3 hours ago </span>
+                    </div>
+                    <!-- Headline -->
+                    <div class="fw-bold text-white wd-font-14px pt-1">
+                        Stanley Tucci: 'Food or sex? That's the cruellest question...'
+                    </div>
+                </div>
+                <!-- News Image -->
+                <div class="col-3 border-0">
+                    <img src="../../../images/tucci_sugg_post_img.webp" alt="Unable to render image :(" class="rounded-4 wd-suggested-post-img float-end"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Follow Suggestions -->
+        <div class="mt-2 ms-3 me-3 d-none d-lg-block col-lg-4">
+            <!--Who to Follow-->
+            <div class="list-group col-10 ps-3 rounded-4">
+                <!--Who to Follow text-->
+                <span class="wd-nav-list-1 list-group-item fw-bold text-light "> Who to follow </span>
+                <!--Charles Leclerc-->
+                <div class="wd-nav-list-1 list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../../images/leclerc_profile_image.jpg" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold text-light"> Charles Leclerc <i class="fa-solid fa-circle-check"></i> </span> <br/>
+                        <span class="small text-muted"> @Charles_Leclerc </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-follow-btn mt-1 wd-full-width fw-bold"> Follow </button>
+                    </div>
+                </div>
+                <!--Cristiano Ronaldo-->
+                <div class="wd-nav-list-1 list-group-item list-group-item-action d-flex">
+                    <!-- profile image -->
+                    <div class="col-2">
+                        <img src="../../../images/cr7_profile_image.jpg" alt="Unable to render image :(" class="wd-profile-img"/>
+                    </div>
+                    <!-- User Name and tag -->
+                    <div class="col-7 ms-1">
+                        <span class="fw-bold text-light"> Cristiano Ronaldo <i class="fa-solid fa-circle-check"></i> </span> <br/>
+                        <span class="small text-muted"> @Cristiano </span>
+                    </div>
+                    <!-- Follow Button -->
+                    <div class="col-3">
+                        <button class="btn btn-primary wd-follow-btn mt-1 wd-full-width fw-bold"> Follow </button>
+                    </div>
+                </div>
+                <!--SHOW MORE-->
+                <div class="wd-nav-list-1 list-group-item list-group-item-action d-flex">
+                    <div class="col">
+                        <a href="#" class="wd-show-more justify-content-start"> Show More </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Miscellaneous Links -->
+            <div class="small text-muted mt-2 ps-3">
+                <span class="ps-2"> Terms of Service </span> <span class="ps-2"> Privacy Policy </span> <span class="ps-2"> Cookie Policy </span> <br/>
+                <span class="ps-2"> Ads Info </span> <span class="ps-2"> More <i class="fa-solid fa-ellipsis"></i> </span>
+                <span class="ps-2"> <i class="fa-regular fa-copyright"></i> CS6220 Fall22, Tuit. </span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

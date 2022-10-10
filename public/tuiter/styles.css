@@ -1,5 +1,8 @@
-.wd-background-color {
+.wd-background-color-black {
     background-color: black;
+}
+.wd-background-color-white {
+    background-color: white;
 }
 
 .wd-font {
@@ -13,6 +16,9 @@
 }
 .wd-font-13px {
     font-size: 13px;
+}
+.wd-font-14px {
+    font-size: 14px;
 }
 .wd-font-gray {
     color: gray;
@@ -29,7 +35,7 @@
 
 .wd-border {
     border-width: 1px;
-    border-color: rgb(47, 51, 54);
+    border-color: rgb(70, 70, 70);
 }
 .wd-no-border {
     border: none;
@@ -109,4 +115,6 @@
 .wd-float-left {
     float: left;
 }
-
+.wd-show-more {
+    text-decoration: none;
+}

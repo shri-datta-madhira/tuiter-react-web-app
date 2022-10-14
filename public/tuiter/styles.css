@@ -36,6 +36,8 @@
 .wd-border {
     border-width: 1px;
     border-color: rgb(70, 70, 70);
+    border-style: solid;
+    background-color: #383838;
 }
 .wd-no-border {
     border: none;

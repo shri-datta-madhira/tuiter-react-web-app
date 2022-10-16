@@ -9,7 +9,7 @@ const NavigationSidebar = () => {
                     <i class="fa-solid fa-house-chimney"></i> <span class="d-none d-xl-inline">Home</span>
             </a>
             <!--Explore-->
-            <a href="../explore/index.html" id="explore" class="list-group-item list-group-item-action">
+            <a href="../ExploreScreen/index.html" id="explore" class="list-group-item list-group-item-action">
                 <i class="fa-solid fa-hashtag"></i> <span class="d-none d-xl-inline">Explore</span>
             </a>
             <!--Notifications-->

@@ -1,0 +1,10 @@
+@import "../styles.css";
+
+.wd-crls {
+    font-size: .85rem;
+}
+
+.wd-card-text:empty {
+    display: none;
+}
+

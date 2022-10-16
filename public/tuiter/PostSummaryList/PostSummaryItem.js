@@ -1,18 +1,20 @@
 const PostSummaryItem = (post) => {
     return(`
-        <div class="d-flex">
+        <div class="list-group-item list-group-item-action d-flex">
             <!-- content -->
-            <div class="col-9 pt-1 ps-2 pb-1">
+            <div class="col-9 pt-1 ps-1 pb-1">
                 <!-- Topic -->
-                <div class="wd-font-gray wd-font-12px"> ${post.topic} </div>
+                <div class="text-muted wd-font-12px"> ${post.topic} </div>
                 <!-- User name tag and time -->
                 <div class="wd-font-14px">
                     <span class="fw-bold text-white"> ${post.userName} </span>
                     <i class="fa-solid fa-circle-check"></i>
-                    <span class="wd-font-gray"> - ${post.time} </span>
+                    <span class="text-muted"> - ${post.time} </span>
                 </div>
                 <!-- Paragraph -->
                 <div class="fw-bold text-white wd-font-14px"> ${post.title} </div>
+                <!-- Tweet count -->
+                <div class="text-muted small"> ${post.tweets} </div>
             </div>
             <!-- picture -->
             <div class="col-3 pt-1">

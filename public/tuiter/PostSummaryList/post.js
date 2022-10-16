@@ -5,7 +5,8 @@ export default exploreItems = [
         userName: 'ReactJS',
         time: '2h',
         title: 'React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs',
-        image: '../../images/react_sugg_post_img.png'
+        image: '../../images/react_sugg_post_img.png',
+        tweets: '',
     },
     {
         topic: '',
@@ -13,15 +14,15 @@ export default exploreItems = [
         time: '1 day',
         title: 'JavaScript is programming language that can run on browsers as well as desktops',
         image: '../../images/js_sugg_post_img.png',
-        tweets: '123K',
+        tweets: '123K Tuits',
     },
     {
         topic: 'Web Development',
-        userName: '',
-        title: 'jQuery',
+        userName: 'jQuery',
+        title: '',
         time: 'last week',
         image: '../../images/jquery_sugg_post_img.png',
-        tweets: '122K',
+        tweets: '122K Tuits',
     },
     {
         topic: 'Web Development',
@@ -29,6 +30,6 @@ export default exploreItems = [
         title: '',
         time: 'last month',
         image: '../../images/node_sugg_post_img.jpg',
-        tweets: '120K',
+        tweets: '120K Tuits',
     },
 ];

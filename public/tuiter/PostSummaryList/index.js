@@ -4,7 +4,7 @@ import exploreItems from "./post.js"
 const PostSummaryList = () => {
     return(`
         <!-- Suggested posts -->
-        <div class="wd-border rounded">
+        <div class="list-group">
                 ${
                     exploreItems.map( ei => {return(PostSummaryItem(ei))} ).join('')
                 }

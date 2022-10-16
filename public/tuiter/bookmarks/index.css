@@ -23,11 +23,7 @@
 }
 
 /* USR IMG DIV*/
-.wd-img-tag {
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-}
+
 .wd-img-div {
     margin: 12px 0 0 16px;
 }
@@ -67,10 +63,10 @@
 }
 
 /*Comment Retuit Like Share*/
-.wd-crls {
-    justify-content: space-around;
-    width: 100%;
-}
+/*.wd-crls {*/
+/*    justify-content: space-around;*/
+/*    width: 100%;*/
+/*}*/
 .wd-like {
     color: red;
 }

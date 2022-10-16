@@ -4,7 +4,7 @@ const WhoToFollowListItem = (who) => {
         <div class="list-group-item list-group-item-action d-flex">
             <!-- profile image -->
             <div class="col-2">
-                <img src=${who.avatarIcon} alt="Unable to render image :(" class="wd-profile-img"/>
+                <img src=${who.avatarIcon} alt="Unable to render image :(" class="wd-profile-img rounded-circle"/>
             </div>
             <!-- User Name and tag -->
             <div class="col-7 ms-1">

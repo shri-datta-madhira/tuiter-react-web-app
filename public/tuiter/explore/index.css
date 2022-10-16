@@ -76,20 +76,14 @@
 .wd-suggested-post-div {
     width: 80%;
 }
-.wd-suggested-post-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 20%;
-}
 
-.wd-profile-img {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-}
 .btn-primary.wd-tweet-btn {
     border-radius: 50px;
     width: 90%;
     text-align: center;
+}
+
+.list-group-item:active {
+    background-color: deepskyblue;
 }
 

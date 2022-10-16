@@ -33,6 +33,11 @@
     font-weight: bold;
 }
 
+.wd-border-color {
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+}
+
 .wd-border {
     border-width: 1px;
     border-color: rgb(70, 70, 70);
@@ -58,12 +63,17 @@
 .wd-border-width-8px {
     width: 8px;
 }
-
+.wd-border-radius {
+    border-style: solid;
+    border-radius: 15%;
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+}
 .wd-border-top-left-radius {
-    border-top-left-radius: 5%;
+    border-top-left-radius: 15%;
 }
 .wd-border-top-right-radius {
-    border-top-right-radius: 5%;
+    border-top-right-radius: 15%;
 }
 .wd-border-bottom-left-radius {
     border-bottom-left-radius: 5%;
@@ -119,4 +129,14 @@
 }
 .wd-show-more {
     text-decoration: none;
+}
+
+.wd-profile-img {
+    width: 45px;
+    height: 45px;
+}
+.wd-suggested-post-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
 }

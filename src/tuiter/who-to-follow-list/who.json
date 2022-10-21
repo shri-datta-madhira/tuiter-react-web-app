@@ -1,0 +1,33 @@
+[
+  {
+    "_id": 123,
+    "userName": "Tesla",
+    "handle": "tesla",
+    "avatarIcon": "../../images/tesla_profile_image.jpg"
+  },
+  {
+    "_id": 234,
+    "userName": "NASA",
+    "handle": "NASA",
+    "avatarIcon": "../../images/nasa_profile_image.jpg"
+  },
+  {
+    "_id": 345,
+    "userName": "Scuderia Ferrari",
+    "handle": "Scuderia Ferrari",
+    "avatarIcon": "../../images/scuderia_ferrari_profile_image.png"
+  },
+  {
+    "_id": 456,
+    "userName": "Microsoft",
+    "handle": "Microsoft",
+    "avatarIcon": "../../images/microsoft_profile_image.jpg"
+  },
+  {
+  "_id": 567,
+  "userName": "Spotify",
+  "handle": "Spotify",
+  "avatarIcon": "../../images/spotify_profile_image.jpg"
+}
+]
+

@@ -24,7 +24,7 @@ const PostItem = (
         <div className="container d-flex border-bottom border-thin mt-2">
             {/* user profile image */}
             <div className="col-1 pt-1">
-                <img src={post.userImage} alt="Unable to render image :(" className="rounded-circle wd-profile-img"/>
+                <img src={post.userImage} alt="Unable to render :(" className="rounded-circle wd-profile-img"/>
             </div>
             {/* everything else */}
             <div className="col-11 ms-2 me-2">
@@ -46,7 +46,7 @@ const PostItem = (
                         {/* card image */}
                         <div>
                             <img src={post.cardImage} className="card-img-top rounded-4"
-                                 alt="Unable to render image :("/>
+                                 alt="Unable to render :("/>
                         </div>
                         {/* card content */}
                         <div className="border-top border-dark ps-2 pt-2 pb-2 pe-2">

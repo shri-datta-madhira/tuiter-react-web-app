@@ -1,9 +1,9 @@
 [
   {
     "_id": 123,
-    "userImage": "../../images/musk_profile_img.webp",
-    "userName": "Elon Musk",
-    "userTag": "elonmusk",
+    "userImage": "../../images/spacex_sugg_post_img.jpg",
+    "userName": "SpaceX",
+    "userTag": "SpaceX",
     "time": "23h",
     "postText": "Amazing show about @inspiration4x mission!",
     "cardImage": "../../images/bkmks_post_1.jpg",

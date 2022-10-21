@@ -3,7 +3,7 @@ import "./index.css";
 
 const PostItem = (
     {
-        p = {
+        post = {
             "userImage": "../../images/musk_profile_img.webp",
             "userName": "Elon Musk",
             "userTag": "elonmusk",
@@ -24,39 +24,36 @@ const PostItem = (
         <div className="container d-flex border-bottom border-thin mt-2">
             {/* user profile image */}
             <div className="col-1 pt-1">
-                <img src={p.userImage} alt="Unable to render image :("
-                     className="rounded-circle wd-profile-img"/>
+                <img src={post.userImage} alt="Unable to render image :(" className="rounded-circle wd-profile-img"/>
             </div>
             {/* everything else */}
             <div className="col-11 ms-2 me-2">
                 {/* user name, tag */}
                 <div>
-                            <span className="fw-bold text-white">
-                                {p.userName}
-                                <i className="fa-solid fa-circle-check"></i>
-                            </span>
-                    <span className="text-muted"> @{p.userTag} &middot; {p.time} </span>
+                    <span className="fw-bold text-dark">
+                        {post.userName} <i className="fa-solid fa-circle-check"></i>
+                    </span>
+                    <span className="text-muted"> @{post.userTag} &middot; {post.time} </span>
                     <span className="float-end"> <i className="fa-solid fa-ellipsis"></i> </span>
                 </div>
                 {/* post txt */}
                 <div className="pt-1">
-                    <span className="text-white"> {p.postText} </span>
+                    <span className="text-dark"> {post.postText} </span>
                 </div>
                 {/* post card */}
                 <div className="pt-3 pb-3">
-                    <div className="rounded-4 border border-light">
+                    <div className="rounded-4 border border-dark">
                         {/* card image */}
                         <div>
-                            <img src={p.cardImage} className="card-img-top rounded-4"
+                            <img src={post.cardImage} className="card-img-top rounded-4"
                                  alt="Unable to render image :("/>
                         </div>
                         {/* card content */}
-                        <div className="border-top border-light ps-2 pt-2 pb-2 pe-2">
-                            <div className="pt-1 fw-bold text-white"> {p.cardTitle} </div>
-                            <div className="text-muted"> {p.cardText} </div>
-                            <a href={p.cardLink}
-                               className="text-decoration-none text-muted">
-                                <i className="fa-solid fa-link"></i> {p.cardLink}
+                        <div className="border-top border-dark ps-2 pt-2 pb-2 pe-2">
+                            <div className="pt-1 fw-bold text-dark"> {post.cardTitle} </div>
+                            <div className="text-muted"> {post.cardText} </div>
+                            <a href={post.cardLink} className="text-decoration-none text-muted">
+                                <i className="fa-solid fa-link"></i> {post.cardLink}
                             </a>
                         </div>
                     </div>
@@ -65,15 +62,15 @@ const PostItem = (
                 <div className="row pb-3 ps-2 text-muted">
                     <div className="col">
                         <i className="fa-regular fa-comment"></i>
-                        <span className="text-muted ps-2 wd-crls">${p.comments}</span>
+                        <span className="text-muted ps-2 wd-crls">${post.comments}</span>
                     </div>
                     <div className="col">
                         <i className="fa-solid fa-retweet"></i>
-                        <span className="text-muted ps-2 wd-crls">${p.retuits}</span>
+                        <span className="text-muted ps-2 wd-crls">${post.retuits}</span>
                     </div>
                     <div className="col">
                         <i className="fa-regular fa-heart"></i>
-                        <span className="text-muted ps-2 wd-crls">${p.likes}</span>
+                        <span className="text-muted ps-2 wd-crls">${post.likes}</span>
                     </div>
                     <div className="col">
                         <i className="fa-solid fa-arrow-up-from-bracket"></i>

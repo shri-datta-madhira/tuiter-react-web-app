@@ -1,13 +1,13 @@
 import React from 'react'
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
-import ExploreComponent from "./explore";
+import ExploreComponent from "./explore/index.js";
 import {Routes, Route} from "react-router";
-import HomeComponent from "./home";
+import HomeComponent from "./home/index.js";
 
 function Tuiter() {
     return(
-        <div className="row mt-2 container">
+        <div className="row mt-2">
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                 <NavigationSidebar active="explore"/>
             </div>

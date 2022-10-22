@@ -41,23 +41,26 @@ const PostItem = (
                     <span className="text-dark"> {post.postText} </span>
                 </div>
                 {/* post card */}
-                <div className="pt-3 pb-3">
-                    <div className="rounded-4 border border-dark">
+                {(post.cardImage || post.cardTitle || post.cardText) && (
+                    <div className="mt-3 mb-3 border border-dark rounded-top rounded-bottom">
                         {/* card image */}
-                        <div>
-                            <img src={post.cardImage} className="card-img-top rounded-4"
-                                 alt="Unable to render :("/>
-                        </div>
+                        {post.cardImage && (
+                            <div>
+                                <img src={post.cardImage} className="card-img-top rounded-top" alt="Unable to render :("/>
+                            </div>
+                        )}
                         {/* card content */}
-                        <div className="border-top border-dark ps-2 pt-2 pb-2 pe-2">
-                            <div className="pt-1 fw-bold text-dark"> {post.cardTitle} </div>
-                            <div className="text-muted"> {post.cardText} </div>
-                            <a href={post.cardLink} className="text-decoration-none text-muted">
-                                <i className="fa-solid fa-link"></i> {post.cardLink}
-                            </a>
-                        </div>
+                        {(post.cardTitle || post.cardText) && (
+                            <div className="border-top border-dark ps-2 pt-2 pb-2 pe-2">
+                                <div className="pt-1 fw-bold text-dark"> {post.cardTitle} </div>
+                                <div className="text-muted"> {post.cardText} </div>
+                                <a href={post.cardLink} className="text-decoration-none text-muted">
+                                    <i className="fa-solid fa-link"></i> {post.cardLink}
+                                </a>
+                            </div>
+                        )}
                     </div>
-                </div>
+                )}
                 {/* Comments, Retweets, likes, share */}
                 <div className="row pb-3 ps-2 text-muted">
                     <div className="col">

@@ -310,7 +310,6 @@ const init = () => {
     showBtn.click(showHandler);
 
 
-
 }
 // eslint-disable-next-line no-undef
 $(init);

@@ -30,23 +30,28 @@ const ProfileComponent = () => {
                  </div>
                  {/* everything else */}
                  <div className="container pe-2 mb-2">
+                     {/* First Name, Last Name */}
                      <div className="fw-bold"> {profileInfo.firstName} {profileInfo.lastName} </div>
+                     {/* Handle */}
                      <div className="text-muted"> {profileInfo.handle} </div>
+                     {/* Bio */}
                      <div className="mt-3"> {profileInfo.bio} </div>
-                     <div className="mt-2 row text-muted">
-                         <div className="col-3">
+                     {/* Location, DOB, Date Joined */}
+                     <div className="d-flex mt-2 text-muted">
+                         <div className="float-start me-3">
                              <i className="bi bi-geo-alt me-1"></i>
                              <span className="small">{profileInfo.location}</span>
                          </div>
-                         <div className="col-3">
+                         <div className="float-start me-3">
                              <i className="bi bi-balloon me-1"></i>
                              <span className="small">Born {profileInfo.dateOfBirth}</span>
                          </div>
-                         <div className="col-3">
+                         <div className="float-start me-3">
                              <i className="bi bi-calendar3 me-1"></i>
                              <span className="small">Joined {profileInfo.dateJoined}</span>
                          </div>
                      </div>
+                     {/* Following, Followers counts */}
                      <div className="small mt-2 text-muted">
                          <span className="fw-bold text-dark">{profileInfo.followingCount}</span> Following
                          <span className="fw-bold text-dark ms-2">{profileInfo.followersCount}</span> Followers

@@ -78,7 +78,7 @@ const EditProfileComponent = ({editComplete}) => {
                 {/* Birth Date */}
                 <div className="container mt-3 mb-3">
                     <label for="dateOfBirth">Birth Date</label>
-                    <input type="date" id="dateOfBirth" name="dateOfBirth" className="form-control mt-1 wd-form"
+                    <input type="text" id="dateOfBirth" name="dateOfBirth" className="form-control mt-1"
                            defaultValue={profileInfo.dateOfBirth}
                            onChange={(event) => updateEventHandler(event)}/>
                 </div>

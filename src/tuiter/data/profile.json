@@ -1,0 +1,17 @@
+[
+  {
+    "firstName": "Shri Datta",
+    "lastName": "Madhira",
+    "handle": "@shrimadhira",
+    "profilePicture": "../../images/gojo_profile_img.jpeg",
+    "bannerPicture": "../../images/skyline_banner_img.jpeg",
+    "bio": "CS@Northeastern, Software Engineer, Space, Motorsports, Gaming, and Philosophy.",
+    "website": "msd.com",
+    "location": "Boston, MA",
+    "dateOfBirth": "5/12/1998",
+    "dateJoined": "4/2014",
+    "followingCount": 340,
+    "followersCount": 223
+  }
+
+]

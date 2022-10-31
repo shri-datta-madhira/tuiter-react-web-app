@@ -1,0 +1,45 @@
+[
+  {
+    "_id": 123,
+    "topic": "Gaming",
+    "userName": "NVIDIA",
+    "title": "AMD Monster Radeon RX 7900XTX Graphics Card Rumored To Take On NVidia RTX 4090",
+    "time": "2h",
+    "image": "../../images/nvidia_sugg_post_img.webp",
+    "liked": true,
+    "replies": 123,
+    "retuits": 234,
+    "likes": 3456,
+    "handle": "@nvidia",
+    "tuit": "It's an exciting time for PC gamers with yet another major hardware launch expected soon and this time it's AMD taking on Nvidia with what we expect to be a monster graphics card - the Radeon RX 7900XTX, which will go head to head with Nvidia's GeForce RTX 4090.The latest rumors suggest a large graphics card with a massive 24GB of GDDR6 memory."
+  },
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "../../images/spacex_sugg_post_img.jpg",
+    "liked": false,
+    "replies": 456,
+    "retuits": 567,
+    "likes": 6789,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars."
+
+  },
+  {
+    "_id": 345,
+    "topic": "Energy",
+    "userName": "Tesla",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "image": "../../images/tesla_sugg_post_img.jpg",
+    "liked": true,
+    "replies": 789,
+    "retuits": 891,
+    "likes": 9101,
+    "handle": "@tesla",
+    "tuit": "The language used by Elon Musk about Tesla’s self-driving effort is changing, and it is muddying the timeline for the automaker to deliver on its promise. Musk use to make statements that made him sound supremely confident that Tesla could soon deliver a self-driving system and virtually all vehicles the automaker produced since 2016 through a software update."
+  }
+]

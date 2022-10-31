@@ -46,7 +46,7 @@ const TuitItem = (
                     <span className="text-dark"> {tuit.tuit} </span>
                 </div>
                 {/* Comments, Retweets, likes, share */}
-                <TuitStats key={tuit._id} post={tuit}/>
+                <TuitStats key={tuit._id} tuit={tuit}/>
             </div>
         </div>
     );

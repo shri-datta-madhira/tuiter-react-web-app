@@ -7,11 +7,13 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore/index.js";
 import HomeComponent from "./home/index.js";
+import ProfileComponent from "./profile/index.js";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
+import ProfileReducer from "./reducers/profile-reducer";
 
 
-const store = configureStore({reducer: {who: whoReducer, tuits: tuitsReducer}});
+const store = configureStore({reducer: {who: whoReducer, tuits: tuitsReducer, profile: ProfileReducer}});
 
 function Tuiter() {
     return(
@@ -22,8 +24,9 @@ function Tuiter() {
                 </div>
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6" style={{"position": "relative"}}>
                     <Routes>
-                        <Route index path="home" element={<HomeComponent/>}/>
+                        <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
+                        <Route path="profile" element={<ProfileComponent/>}/>
                     </Routes>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

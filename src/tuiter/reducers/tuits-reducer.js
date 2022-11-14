@@ -18,6 +18,7 @@ const tuitsSlice = createSlice({
                                        [findTuitsThunk.fulfilled]:(state, { payload }) => {
                                                state.loading = false
                                                state.tuits = payload
+                                                console.log(payload)
                                            },
                                        [findTuitsThunk.rejected]:(state) => {
                                                state.loading = false

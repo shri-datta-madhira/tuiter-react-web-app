@@ -1,6 +1,17 @@
 import React, {useState} from "react";
-import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
+
+const currentUser = {
+    "username": "Shri Datta Madhira",
+    "handle": "@shrimadhira",
+    "image": "../../images/gojo_profile_img.jpeg",
+    "time": "2h",
+    "liked": false,
+    "likes": 0,
+    "disliked": false,
+    "dislikes": 0
+};
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
@@ -8,9 +19,10 @@ const WhatsHappening = () => {
     const tuitClickHandler = () => {
         // console.log(whatsHappening);
         const newTuit = {
+            ...currentUser,
             tuit: whatsHappening
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
     }
     return (
         <div className="row">

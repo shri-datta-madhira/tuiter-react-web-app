@@ -13,7 +13,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import ProfileReducer from "./reducers/profile-reducer";
 
 
-const store = configureStore({reducer: {who: whoReducer, tuits: tuitsReducer, profile: ProfileReducer}});
+const store = configureStore({reducer: {who: whoReducer, tuitsData: tuitsReducer, profile: ProfileReducer}});
 
 function Tuiter() {
     return(

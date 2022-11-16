@@ -32,17 +32,12 @@ const tuitsSlice = createSlice({
                                            (state, { payload }) => {
                                                state.loading = false
                                                console.log(payload)
-                                               // const newTuit = {
-                                               //     ...payload,
-                                               //     ...templateTuit
-                                               // }
                                                state.tuits.push(payload)
                                            },
                                        [updateTuitThunk.fulfilled]:
                                            (state, { payload }) => {
                                                state.loading = false
-                                               const tuitNdx = state.tuits
-                                                   .findIndex((t) => t._id === payload._id)
+                                               const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id)
                                                state.tuits[tuitNdx] = {
                                                    ...state.tuits[tuitNdx],
                                                    ...payload
